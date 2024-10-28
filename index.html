@@ -42,18 +42,27 @@
             padding: 1em 0;
         }
     </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <script>
+        // Función para cargar el archivo header.html en el contenedor
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-container").innerHTML = data;
+                });
+        });
+    </script>
 </head>
 <body>
 
-<header>
-    <h1>Bienvenido a Mi Página Personal</h1>
-</header>
+<!-- Contenedor para el encabezado -->
+<div id="header-container"></div>
 
-<nav>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-</nav>
+
 
 <section id="sobre-mi">
     <h2>Sobre mí</h2>
