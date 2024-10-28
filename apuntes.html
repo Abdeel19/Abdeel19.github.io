@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <script>
+        // Función para cargar el archivo header.html en el contenedor
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-container").innerHTML = data;
+                });
+        });
+    </script>
+</head>
+<body>
+
+<!-- Contenedor para el encabezado -->
+<div id="header-container"></div>
+
+<section>
+    <h2>Apuntes</h2>
+    <p>Cácluclo</p>
+	<p>Ecuaciones diferenciales</p>
+</section>
+
+</body>
+</html>
