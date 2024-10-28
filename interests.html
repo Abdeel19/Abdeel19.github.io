@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+	</style>
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+	<script>
+        // Función para cargar el archivo header.html en el contenedor
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-container").innerHTML = data;
+                });
+        });
+    </script>
+</head>
+<body>
+
+<!-- Contenedor para el encabezado -->
+<div id="header-container"></div>
+
+<section>
+    <h2>Música</h2>
+    <ul>
+		<li>Aquí hay una lista de mis álbumes favoritos.</li>
+		<li>Aquí hay plylists.</li>
+	</ul>
+    
+	<h2>Manga y anime</h2>
+	<ul>
+		<li>Vagabond--Takehiko Inoue</li>
+		<li>Slam Dunk--Takehiko Inoue</li>
+		<li>JoJo's Bizarre Adventure--Hirohiko Araki</li>
+		<li>Vinland Saga--Makoto Yukimura</li>
+		<li>Berserk--Kentaro Miura</li>
+		<li>Neon Genesis Evangelion--Hideaki Ano</li>
+	</ul>
+
+	<h2>Literatura</h2>
+	<p>En este momento estoy leyendo Los Hermanos Karamázov de Fiódor Dostoyevski</p> 
+	<ul>
+		<li>Moby Dick--Herman Melville</li>
+	</ul>
+
+	<h2>Pintura e ilustración</h2>
+
+	
+	<h2>Series y películas</h2>
+
+
+
+</section>
+
+<footer>
+    <p>© 2024 Mi Página Personal. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
